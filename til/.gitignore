@@ -1,0 +1,4 @@
+.DS_Store
+build/data/*.md
+node_modules/
+build/data/_til_*

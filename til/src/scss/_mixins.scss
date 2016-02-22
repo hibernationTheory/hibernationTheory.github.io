@@ -1,0 +1,17 @@
+@mixin bp($point) {
+  
+  $xs: "(max-width: 479px)";
+  $sm: "(max-width: 767px)";
+  $md: "(max-width: 1119px)";
+
+  @if $point == xs {
+    @media #{$xs} { @content; }
+  }
+  @else if $point == sm {
+    @media #{$sm} { @content; }
+  }
+  @else if $point == md {
+    @media #{$md}  { @content; }
+  }
+
+}

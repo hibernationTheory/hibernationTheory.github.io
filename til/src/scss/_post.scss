@@ -1,0 +1,37 @@
+
+
+.post {
+	@include post;
+}
+
+.post-content {
+    a {
+    	color: inherit;
+    	text-decoration: none;
+    	font-weight:500;
+    }
+
+    h1 {
+		font-size: 1.6rem;
+		margin-bottom: 20px;
+    }
+
+    pre {
+    	padding: 20px;
+		background: #fcfcf5;
+		font-size: 0.9rem;
+		overflow: auto;
+    }
+}
+
+.post-info__list {
+	@include unordered-list;
+}
+
+.post-info__list__item {
+	@include unordered-list-item;
+}
+
+.post-info__list__item__tag {
+	@include tag;
+}
